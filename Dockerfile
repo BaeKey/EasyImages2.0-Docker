@@ -17,6 +17,6 @@ RUN apt update && apt install -y unzip wget && \
     apt-get remove -y wget zip && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
-    chmod 755 start.sh
+    chmod 755 /start.sh
 
 WORKDIR /app/web
